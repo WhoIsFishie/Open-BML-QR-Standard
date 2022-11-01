@@ -1,5 +1,8 @@
 # Open-BML-QR-Standard
 
+## Goal
+to have all shops use the same QR code Scheme and have an opensource android and ios application to scan the QR for ease of use. this would also make shareing QR code of personal accounts easier if all devs come together and pick a standard to make apps for.
+
 ## Requirments
 - Must fit withing a QR Code
 - The data must be easily serializable and desirliazable on any programing language 
@@ -86,3 +89,15 @@ Type=0
 Numb=+960 712 3456
 ```
 an alternetive to json as there are less characters being used.
+
+------------
+#### RAW 1
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.pngg)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
+```txt
+//BML Account Number
+7770-0000-54321
+Company Name
+1
++960 712 3456
+```
+this is a raw text version where regex is used to detect contact number and account number. a single digit is assigned to the Currency and the account name will be the only string
