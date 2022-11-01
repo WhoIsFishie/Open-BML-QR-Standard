@@ -1,0 +1,27 @@
+{
+    "version" : 0.1,
+    "bank" : "MALBMVMVXXX",
+    "account" : [
+        {
+            "currency" : "MVR",
+            "name" : "Sample Company Pvt Ltd",
+            "number" : "7770000012345"
+            
+        },
+        {
+            "currency" : "USD",
+            "name" : "Sample Company Pvt Ltd",
+            "number" : "7770000012345"
+        }
+    ],
+    "contact" : [
+        {
+            "type" : "telegram",
+            "value" : "@Username"
+        },
+        {
+            "type" : "viber",
+            "value" : "+960 7123456"
+        }
+    ]
+}
