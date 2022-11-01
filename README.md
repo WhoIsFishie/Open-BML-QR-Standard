@@ -11,14 +11,14 @@ to have all shops use the same QR code Scheme and have an opensource android and
 - Data must be readable offline (*the data cant point to a website which then loads the details*)
 
 ### Current Suggestions
-- [Heavy Json](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#heavy-json "Heavy Json")
-- [Json Lite](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#lite-json "Json Lite")
-- [INI](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#ini "INI")
+- [Heavy Json](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#heavy-json "Heavy Json")
+- [Json Lite](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#lite-json "Json Lite")
+- [INI](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#ini "INI")
 
 
 
 #### Heavy Json
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)
 ```jsonc
 {
     "BML_Data": [
@@ -56,7 +56,7 @@ this options allows to multiple types of data to be added in a very flexible way
 
 ------------
 #### Lite Json
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)
 ```jsonc
 {
     "Ver": "2.0",
@@ -75,7 +75,7 @@ this is a simpler and lighter version of Heavy Json but it only supports single 
 
 ------------
 #### INI
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)
 ```asp
 Ver=3
 //BML Account Number
@@ -92,7 +92,7 @@ an alternetive to json as there are less characters being used.
 
 ------------
 #### RAW 1
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
 ```txt
 //BML Account Number
 7770-0000-54321
@@ -104,7 +104,7 @@ this is a raw text version where regex is used to detect contact number and acco
 
 ------------
 #### CSV
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)
 ```txt
 7770-0000-54321,7770-0000-12345
 Company Name,Company Name
