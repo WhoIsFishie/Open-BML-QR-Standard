@@ -104,7 +104,7 @@ this is a raw text version where regex is used to detect contact number and acco
 
 ------------
 #### CSV
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)
 ```txt
 7770-0000-54321,7770-0000-12345
 Company Name,Company Name
