@@ -5,7 +5,7 @@
 - The data must be easily serializable and desirliazable on any programing language 
 - the data must be readable even when scanned normaly (*this means the data must not be compressed to bypass requirment 1*)
 - Must not use any propirotery technology for any of the steps as this is a Open Standard (*this rules out Microsoft Tags*)
-- Data must be readable offline (the data cant point to a website which then loads the details)
+- Data must be readable offline (*the data cant point to a website which then loads the details*)
 
 ### Current Suggestions
 - [Heavy Json](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#heavy-json "Heavy Json")
