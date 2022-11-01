@@ -8,6 +8,11 @@
 - Data must be readable offline (the data cant point to a website which then loads the details)
 
 ### Current Suggestions
+- [Heavy Json](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#heavy-json "Heavy Json")
+- [Json Lite](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#lite-json "Json Lite")
+- [INI](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#ini "INI")
+
+
 
 #### Heavy Json
 [![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)
