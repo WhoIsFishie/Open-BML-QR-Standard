@@ -92,7 +92,7 @@ an alternetive to json as there are less characters being used.
 
 ------------
 #### RAW 1
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.pngg)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
 ```txt
 //BML Account Number
 7770-0000-54321
