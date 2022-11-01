@@ -101,3 +101,16 @@ Company Name
 +960 712 3456
 ```
 this is a raw text version where regex is used to detect contact number and account number. a single digit is assigned to the Currency and the account name will be the only string
+
+------------
+#### CSV
+[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](http://https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
+```txt
+7770-0000-54321,7770-0000-12345
+Company Name,Company Name
+1,0
+Viber,Telegram
++960 712 3456,@username
+```
+an updated version of RAW 1
+this method uses CSV and Regex as well as line numbers to phase the text. this method is very readable but not easily scalable. in place of CSV we could also use TSV
