@@ -116,3 +116,20 @@ Viber,Telegram
 ```
 an updated version of RAW 1
 this method uses CSV and Regex as well as line numbers to phase the text. this method is very readable but not easily scalable. in place of CSV we could also use TSV
+
+------------
+#### NText
+![image](https://user-images.githubusercontent.com/83373559/199571658-26e7ccbe-9f91-4d7c-a4e3-02e18e2dfc5c.png)
+```NextedText
+BANK:
+    A:
+        >Company Name
+        >7777000001234
+        >0
+    B:
+        >Company Name
+        >7777000001234
+        >1
+viber:7123456
+```
+[Nested Text](https://nestedtext.org/en/stable/) is a simpler and much more readable alternative to JSON 
