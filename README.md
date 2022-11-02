@@ -14,6 +14,8 @@ to have all shops use the same QR code Scheme and have an opensource android and
 - [Heavy Json](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#heavy-json "Heavy Json")
 - [Json Lite](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#lite-json "Json Lite")
 - [INI](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#ini "INI")
+- [RAW 1](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#raw-1 "RAW 1")
+- [CSV](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#csv "CSV")
 
 
 
