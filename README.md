@@ -1,5 +1,7 @@
 # Open-BML-QR-Standard
 
+[READ THE WIKI](https://github.com/WhoIsFishie/Open-BML-QR-Standard/wiki)
+
 ## Goal
 to have all shops use the same QR code Scheme and have an opensource android and ios application to scan the QR for ease of use. this would also make shareing QR code of personal accounts easier if all devs come together and pick a standard to make apps for.
 
