@@ -194,7 +194,7 @@ viber:7123456
 ![YAML](Img/YAML.png)
 
 ```yaml
-ver: "1.0"
+ver: '1.0'
 data: 
 # Data supported for each bank type must be defined in standard
 - type: BML # Bank strings must be defined in standard
