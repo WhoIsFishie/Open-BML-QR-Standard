@@ -238,7 +238,7 @@ This builds on to the Heavy Json suggestion, with some improvements:
 
 #### Emoji
 
-![YAML](Img/Emoji.png)
+<img src="Img/Emoji.png" width="200">
 
 ```emoji
 👤account name
