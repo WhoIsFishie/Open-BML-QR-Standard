@@ -195,12 +195,13 @@ viber:7123456
 
 ```yaml
 ver: '1.0'
+
+# Supported payment options (as well as their schema) must be defined in standard
 data: 
-# Data supported for each bank type must be defined in standard
-- type: BML # Bank strings must be defined in standard
+- type: BML
   num: '7000000000000'
   name: ACCOUNT NAME
-  curr: MVR
+  # Currency omitted; assumed to be MVR
 - type: BML
   num: '7000000000000'
   name: ANOTHER ACCOUNT NAME
@@ -209,18 +210,22 @@ data:
   num: '90000000000000000'
   name: YET ANOTHER ACCOUNT NAME
   curr: MVR
-contacts: 
-- type: Telegram # Supported contact type strings must be defined in standard
-  val: '@Username'
-- type: Viber
-  val: '+9607777777'
-- type: WhatsApp
-  val: '+9609999999'
+
+# Supported contact types must be defined in standard
+contacts:
+  # Supports either single values ...
+  telegram: '@Username'
+  # ... or multiple values
+  viber:
+  - '+9607777777'
+  - '+9609999999'
 ```
 
 This builds on to the Heavy Json suggestion, with some improvements:
 - YAML has shorter syntax than JSON, and is widely supported already
 - Uses shorter keys than Heavy Json, while still remaining human-readable where necessary, as per requirement 3
+- Uses shorter schema for contact information
 - Uses established currency codes (more readable, as well as future-proof as there's no need to assign arbitrary values ourselves)
+- Currency is optional (MVR assumed if it's not defined)
 - Not explicitly linked to BML; can include other banks or payment options
 - Excludes the "Extra" object: such info should ideally be printed in multiple languages next to the code instead
