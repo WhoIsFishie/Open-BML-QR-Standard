@@ -3,38 +3,37 @@
 [READ THE WIKI](https://github.com/WhoIsFishie/Open-BML-QR-Standard/wiki)
 
 ## Goals
-- Set a QR code schema that all the shops in the country can follow. This will allow developers to create Android and iOS applications that will follow the schema as a standard so that there will be no clashes when different people use different apps.
+- Set a QR code schema that all the shops in the country can follow. This will allow developers to create Android and iOS applications that will follow the schema as a standard, so that there will be no clashes when different people use different apps.
 
-- Making QR codes that all the users to share personal banking details safely and efficiently
+- Making QR codes that allow users to share personal banking details safely and efficiently
 
-- Create an open source android and iOS app that will scan the QR code easily
+- Create an open source Android and iOS app that will scan the QR code easily
 
-## Requirments
+## Requirements
 - The data of the user must fit into the QR code
-- The data must be able to serialize and de-serialize without issue on the any programming language of choice
-- the data must be readable even when scanned normally (*this means the data **MUST** not be compressed to bypass requirment 1*)
+- The data must be able to serialize and de-serialize without issue on any programming language of choice
+- The data must be readable even when scanned normally (*this means the data **MUST NOT** be compressed to bypass requirement 1*)
 - Must not use any **proprietary** software as this is an Open Standard (*this rules out Microsoft Tags*)
-- Data must be readable offline (*the data cant point to a website which then loads the details*)
+- Data must be readable offline (*the data can't point to a website which then loads the details*)
 
 ### Current Suggestions
-- [Heavy Json](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#heavy-json "Heavy Json")
-- [Json Lite](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#lite-json "Json Lite")
-- [INI](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#ini "INI")
-- [RAW 1](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#raw-1 "RAW 1")
-- [CSV](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#csv "CSV")
+- [Heavy Json](#heavy-json)
+- [Lite Json](#lite-json)
+- [INI](#ini)
+- [RAW 1](#raw-1)
+- [CSV](#csv)
+- [NText](#ntext)
 
-## Examples of the given suggetsions can be seen below
+## Examples of the given suggestions can be seen below
 <br>
 <br>
 <br>
-
 
 #### Heavy Json
 
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)
+![Heavy Json](Img/Heavy-Json.png)
 
 ```jsonc
-
 {
     "BML_Data": [
         { 
@@ -67,7 +66,7 @@
     "Version": 1
 }
 ```
-this options allows to multiple types of data to be added in a very flexible way. it also supports multi account and multi contacts.
+This option allows multiple types of data to be added in a very flexible way. It also supports multi account and multi contacts.
 
 ------------
 
@@ -75,9 +74,10 @@ this options allows to multiple types of data to be added in a very flexible way
 
 
 
-
 #### Lite Json
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)
+
+![Lite-Json](Img/Lite-Json.png)
+
 ```jsonc
 {
     "Ver": "2.0",
@@ -92,16 +92,19 @@ this options allows to multiple types of data to be added in a very flexible way
     "Numb": "+960 712 3456"
 }
 ```
-this is a simpler and lighter version of Heavy Json but it only supports single contact and account
+This is a simpler and lighter version of Heavy Json, but it only supports single contact and account.
 
 ------------
+
 <br>
 
 
 
 #### INI
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)
-```asp
+
+![INI](Img/Ini.png)
+
+```ini
 Ver=3
 //BML Account Number
 AccNum=7770-0000-54321
@@ -113,49 +116,59 @@ Type=0
 //contact number to send the payment slip to
 Numb=+960 712 3456
 ```
-an alternetive to json as there are less characters being used.
+An alternative to json as there are less characters being used.
 
 ------------
 
 <br>
 
+
+
 #### RAW 1
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
-```txt
+
+![RAW1](Img/RAW1.png)
+
+```
 //BML Account Number
 7770-0000-54321
 Company Name
 1
 +960 712 3456
 ```
-this is a raw text version where regex is used to detect contact number and account number. a single digit is assigned to the Currency and the account name will be the only string
+This is a raw text version where regex is used to detect contact number and account number. A single digit is assigned to the currency, and the account name will be the only string.
 
 ------------
 
 <br>
 
 
+
 #### CSV
-[![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)
-```txt
+
+![CSV](Img/CSV.png)
+
+```
 7770-0000-54321,7770-0000-12345
 Company Name,Company Name
 1,0
 Viber,Telegram
 +960 712 3456,@username
 ```
-an updated version of RAW 1
-this method uses CSV and Regex as well as line numbers to phase the text. this method is very readable but not easily scalable. in place of CSV we could also use TSV
+An updated version of RAW 1.
+
+This method uses CSV and Regex as well as line numbers to phase the text. This method is very readable but not easily scalable. In place of CSV we could also use TSV.
 
 ------------
+
 <br>
+
+
 
 #### NText
 
-<br>
+![NText](Img/NText.png)
 
-![image](https://user-images.githubusercontent.com/83373559/199571658-26e7ccbe-9f91-4d7c-a4e3-02e18e2dfc5c.png)
-```NextedText
+```
 BANK:
     A:
         >Company Name
