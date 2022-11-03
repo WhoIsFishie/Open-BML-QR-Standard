@@ -238,7 +238,7 @@ This builds on to the Heavy Json suggestion, with some improvements:
 
 #### Emoji
 
-![Emoji](Img/Emoji.png | width=100)
+![Emoji](Img/Emoji.png =50x50)
 
 ```emoji
 👤account name
