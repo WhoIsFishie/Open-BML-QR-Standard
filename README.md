@@ -2,14 +2,18 @@
 
 [READ THE WIKI](https://github.com/WhoIsFishie/Open-BML-QR-Standard/wiki)
 
-## Goal
-to have all shops use the same QR code Scheme and have an opensource android and ios application to scan the QR for ease of use. this would also make shareing QR code of personal accounts easier if all devs come together and pick a standard to make apps for.
+## Goals
+- Set a QR code schema that all the shops in the country can follow. This will allow developers to create Android and iOS applications that will follow the schema as a standard so that there will be no clashes when different people use different apps.
+
+- Making QR codes that all the users to share personal banking details safely and efficiently
+
+- Create an open source android and iOS app that will scan the QR code easily
 
 ## Requirments
-- Must fit withing a QR Code
-- The data must be easily serializable and desirliazable on any programing language 
-- the data must be readable even when scanned normaly (*this means the data must not be compressed to bypass requirment 1*)
-- Must not use any propirotery technology for any of the steps as this is a Open Standard (*this rules out Microsoft Tags*)
+- The data of the user must fit into the QR code
+- The data must be able to serialize and de-serialize without issue on the any programming language of choice
+- the data must be readable even when scanned normally (*this means the data **MUST** not be compressed to bypass requirment 1*)
+- Must not use any **proprietary** software as this is an Open Standard (*this rules out Microsoft Tags*)
 - Data must be readable offline (*the data cant point to a website which then loads the details*)
 
 ### Current Suggestions
@@ -19,11 +23,18 @@ to have all shops use the same QR code Scheme and have an opensource android and
 - [RAW 1](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#raw-1 "RAW 1")
 - [CSV](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/README.md#csv "CSV")
 
+## Examples of the given suggetsions can be seen below
+<br>
+<br>
+<br>
 
 
 #### Heavy Json
+
 [![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Heavy%20Json.png)
+
 ```jsonc
+
 {
     "BML_Data": [
         { 
@@ -59,6 +70,12 @@ to have all shops use the same QR code Scheme and have an opensource android and
 this options allows to multiple types of data to be added in a very flexible way. it also supports multi account and multi contacts.
 
 ------------
+
+<br>
+
+
+
+
 #### Lite Json
 [![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Json%20Lite.png)
 ```jsonc
@@ -78,6 +95,10 @@ this options allows to multiple types of data to be added in a very flexible way
 this is a simpler and lighter version of Heavy Json but it only supports single contact and account
 
 ------------
+<br>
+
+
+
 #### INI
 [![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/Ini.png)
 ```asp
@@ -95,6 +116,9 @@ Numb=+960 712 3456
 an alternetive to json as there are less characters being used.
 
 ------------
+
+<br>
+
 #### RAW 1
 [![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/RAW1.png)
 ```txt
@@ -107,6 +131,10 @@ Company Name
 this is a raw text version where regex is used to detect contact number and account number. a single digit is assigned to the Currency and the account name will be the only string
 
 ------------
+
+<br>
+
+
 #### CSV
 [![](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)](https://github.com/WhoIsFishie/Open-BML-QR-Standard/blob/main/Img/CSV.png)
 ```txt
@@ -120,7 +148,12 @@ an updated version of RAW 1
 this method uses CSV and Regex as well as line numbers to phase the text. this method is very readable but not easily scalable. in place of CSV we could also use TSV
 
 ------------
+<br>
+
 #### NText
+
+<br>
+
 ![image](https://user-images.githubusercontent.com/83373559/199571658-26e7ccbe-9f91-4d7c-a4e3-02e18e2dfc5c.png)
 ```NextedText
 BANK:
