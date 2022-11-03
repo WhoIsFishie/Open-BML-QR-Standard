@@ -229,3 +229,29 @@ This builds on to the Heavy Json suggestion, with some improvements:
 - Currency is optional (MVR assumed if it's not defined)
 - Not explicitly linked to BML; can include other banks or payment options
 - Excludes the "Extra" object: such info should ideally be printed in multiple languages next to the code instead
+
+------------
+
+<br>
+
+
+
+#### Emoji
+
+![YAML](Img/Emoji.png)
+
+```emoji
+👤account name
+🇲🇻mvr account number 
+💲doller account number 
+📞7681234
+📞@telegram
+```
+
+This is an improved version of INI :
+- Universal language of emojis. Anyone can see and understand what each emoji means.
+- uses shorter keys. Each emoji is 2 char’s max
+- scalable since we can just keep on adding more emojis and assigning meaning to each one
+- flexible since can store data on any line. As long first char of the line is an emoji user and dev will know what it stands for. 
+- easy to code. Read line by line and check emoji to know where the data is meant to go
+
