@@ -23,6 +23,7 @@
 - [RAW 1](#raw-1)
 - [CSV](#csv)
 - [NText](#ntext)
+- [YAML](#yaml)
 
 ## Examples of the given suggestions can be seen below
 <br>
@@ -180,4 +181,46 @@ BANK:
         >1
 viber:7123456
 ```
-[Nested Text](https://nestedtext.org/en/stable/) is a simpler and much more readable alternative to JSON 
+[Nested Text](https://nestedtext.org/en/stable/) is a simpler and much more readable alternative to JSON
+
+------------
+
+<br>
+
+
+
+#### YAML
+
+![YAML](Img/YAML.png)
+
+```yaml
+ver: '1.0'
+data: 
+# Data supported for each bank type must be defined in standard
+- type: BML # Bank strings must be defined in standard
+  num: '7000000000000'
+  name: ACCOUNT NAME
+  curr: MVR
+- type: BML
+  num: '7000000000000'
+  name: ANOTHER ACCOUNT NAME
+  curr: USD
+- type: MIB
+  num: '90000000000000000'
+  name: YET ANOTHER ACCOUNT NAME
+  curr: MVR
+contacts: 
+- type: Telegram # Supported contact type strings must be defined in standard
+  val: '@Username'
+- type: Viber
+  val: '+9607777777'
+- type: WhatsApp
+  val: '+9609999999'
+```
+
+This builds on to the Heavy Json suggestion, with some improvements:
+- YAML has shorter syntax than JSON, and is widely supported already
+- Uses shorter keys than Heavy Json, while still remaining human-readable where necessary, as per requirement 3
+- Uses established currency codes (more readable, as well as future-proof as there's no need to assign arbitrary values ourselves)
+- Not explicitly linked to BML; can include other banks or payment options
+- Excludes the "Extra" object: such info should ideally be printed in multiple languages next to the code instead
